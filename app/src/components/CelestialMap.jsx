@@ -5,7 +5,7 @@ export default function CelestialMap({ onSelect }) {
   return (
     <svg
       viewBox={`0 0 ${CANVAS.w} ${CANVAS.h}`}
-      preserveAspectRatio="xMidYMid slice"
+      preserveAspectRatio="xMidYMid meet"
       className="absolute inset-0 h-full w-full"
       style={{ pointerEvents: 'none' }}
     >

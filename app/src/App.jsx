@@ -8,16 +8,14 @@ export default function App() {
 
   return (
     <div className="flex h-dvh w-screen flex-col items-center justify-center gap-2 bg-[#12121a] p-2">
-      <div className="relative min-h-0 w-full flex-1 flex items-center justify-center">
-        <div className="relative aspect-[16/9] max-h-full max-w-full w-full">
-          <img
-            src="/wall.jpg"
-            alt="Vinilo decorativo de El Principito y el zorro sobre una pared"
-            className="absolute inset-0 h-full w-full object-cover"
-            draggable={false}
-          />
-          <CelestialMap onSelect={setSelected} />
-        </div>
+      <div className="relative min-h-0 w-full flex-1">
+        <img
+          src="/wall.jpg"
+          alt="Vinilo decorativo de El Principito y el zorro sobre una pared"
+          className="absolute inset-0 h-full w-full object-contain"
+          draggable={false}
+        />
+        <CelestialMap onSelect={setSelected} />
       </div>
 
       <p className="shrink-0 pb-1 text-center text-sm tracking-wide text-white/70">
